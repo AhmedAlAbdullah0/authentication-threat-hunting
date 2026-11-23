@@ -1,0 +1,57 @@
+[
+  {
+    "rule_id": "AUTH-001",
+    "severity": "medium",
+    "attack_hypothesis": "T1110.001",
+    "src_ip": "203.0.113.10",
+    "host": "lab-win01",
+    "logon_type": 3,
+    "users": [
+      "lab\\alex"
+    ],
+    "window_start": "2026-11-01T09:04:50Z",
+    "window_end": "2026-11-01T09:05:02Z",
+    "failure_count": 5,
+    "success_count": 0,
+    "assessment": "Investigate; this pattern alone does not establish compromise."
+  },
+  {
+    "rule_id": "AUTH-003",
+    "severity": "high",
+    "attack_hypothesis": "T1110.001",
+    "src_ip": "203.0.113.10",
+    "host": "lab-win01",
+    "logon_type": 3,
+    "users": [
+      "lab\\alex"
+    ],
+    "window_start": "2026-11-01T09:04:50Z",
+    "window_end": "2026-11-01T09:05:10Z",
+    "failure_count": 6,
+    "success_count": 1,
+    "assessment": "Investigate; this pattern alone does not establish compromise."
+  },
+  {
+    "rule_id": "AUTH-002",
+    "severity": "medium",
+    "attack_hypothesis": "T1110.003",
+    "src_ip": "198.51.100.20",
+    "host": "lab-win02",
+    "logon_type": 3,
+    "users": [
+      "lab\\user01",
+      "lab\\user02",
+      "lab\\user03",
+      "lab\\user04",
+      "lab\\user05",
+      "lab\\user06",
+      "lab\\user07",
+      "lab\\user08"
+    ],
+    "window_start": "2026-11-01T09:20:00Z",
+    "window_end": "2026-11-01T09:21:10Z",
+    "failure_count": 8,
+    "success_count": 0,
+    "assessment": "Investigate; this pattern alone does not establish compromise."
+  }
+]
